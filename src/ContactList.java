@@ -60,7 +60,27 @@ public class ContactList {
         }
     }
 
+    public void run(){
+        System.out.println("Menu:\n" +
+                "1. Add Contact\n" +
+                "2. List All Contacts By First Name\n" +
+                "3. List All Contacts By Last Name\n" +
+                "4. List All Contacts By Last Name\n" +
+                "5. List All Contacts By Phone Number\n" +
+                "6. List All Students\n" +
+                "7. Search By First Name\n" +
+                "8. Search By Last Name\n" +
+                "9. Search By Phone Number\n" +
+                "0. Exit");
 
+        Scanner s = new Scanner(System.in);
+        int input = -1;
+        while (input < 0 || input > 9){
+            input = s.nextInt();
+        }
+
+
+    }
 
 
 
